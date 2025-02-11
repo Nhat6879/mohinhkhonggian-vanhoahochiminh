@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Không gian văn hóa Hồ Chí Minh</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Không gian văn hóa Hồ Chí Minh</h1>
+        <nav>
+            <a href="#about">Giới thiệu</a>
+            <a href="#library">Thư viện tài liệu</a>
+            <a href="#gallery">Hình ảnh</a>
+            <a href="#videos">Video</a>
+            <a href="#articles">Bài viết</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Giới thiệu</h2>
+        <p>Không gian văn hóa Hồ Chí Minh là nơi lưu trữ và giới thiệu các tư liệu, hình ảnh, và video về cuộc đời và sự nghiệp của Bác Hồ.</p>
+    </section>
+
+    <section id="library">
+        <h2>Thư viện tài liệu</h2>
+        <ul>
+            <li><a href="docs/sample.pdf" target="_blank">Tài liệu 1 - PDF</a></li>
+            <li><a href="docs/sample2.pdf" target="_blank">Tài liệu 2 - PDF</a></li>
+        </ul>
+        <canvas id="qr-code"></canvas>
+    </section>
+
+    <section id="gallery">
+        <h2>Bộ sưu tập hình ảnh</h2>
+        <img src="images/sample.jpg" alt="Hình ảnh 1" width="300">
+        <img src="images/sample2.jpg" alt="Hình ảnh 2" width="300">
+    </section>
+
+    <section id="videos">
+        <h2>Video tư liệu</h2>
+        <video width="320" height="240" controls>
+            <source src="videos/sample.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+    </section>
+
+    <section id="articles">
+        <h2>Bài viết và Liên kết</h2>
+        <ul>
+            <li><a href="https://example.com/article1" target="_blank">Bài viết 1</a></li>
+            <li><a href="https://example.com/article2" target="_blank">Bài viết 2</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Không gian văn hóa Hồ Chí Minh</p>
+    </footer>
+
+    <script>
+        var qr = new QRious({
+            element: document.getElementById('qr-code'),
+            value: 'https://yourwebsite.com/docs/sample.pdf',
+            size: 150
+        });
+    </script>
+</body>
+</html>
